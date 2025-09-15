@@ -6,31 +6,30 @@
   <title>El Croissant Rebelde</title>
 
   <link href="https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@700&family=Varela+Round&display=swap" rel="stylesheet">
-
-  <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- HEADER -->
+  <!-- HEADER / HERO -->
   <header class="hero">
     <div class="header-top">
-      <img src="/img/logo inicio horizontal-01.png" alt="Logo" class="logo">
+      <img src="img/logo inicio horizontal-01.png" alt="Logo" class="logo">
       <div class="icons">
-        <img src="/img/waflera.png" alt="Wafflera" class="icon">
-        <img src="/img/carrito.png" alt="Carrito" class="icon">
+        <img src="img/waflera.png" alt="Wafflera" class="icon">
+        <img src="img/carrito.png" alt="Carrito" class="icon">
       </div>
     </div>
 
-    <!-- Imágenes de croissants -->
-    <div class="croissants-float">
-      <img src="/img/croissant-01.png" class="croissant small-top" alt="Croissant arriba">
-      <img src="/img/croissant-02.png" class="croissant medium" alt="Croissant mediano">
-      <img src="/img/croissant-04-01.png" class="croissant small-bottom" alt="Croissant abajo">
+    <!-- Imágenes de croissants flotantes -->
+    <div class="croissants-float" aria-hidden="true">
+      <img src="img/croissant-01.png" class="croissant small-top" alt="Croissant arriba">
+      <img src="img/croissant-02.png" class="croissant medium" alt="Croissant mediano">
+      <img src="img/croissant-04-01.png" class="croissant small-bottom" alt="Croissant abajo">
     </div>
 
     <!-- Cesta de panes -->
-    <div class="basket">
-      <img src="/img/cesta de panes-01.png" alt="Cesta de panes">
+    <div class="basket" aria-hidden="true">
+      <img src="img/cesta de panes-01.png" alt="Cesta de panes">
     </div>
 
     <!-- Texto hero -->
@@ -44,37 +43,37 @@
 
   <!-- SECCIÓN PRODUCTOS -->
   <section class="productos">
-    <!-- Imagen croissant gigante  -->
+    <!-- Croissant gigante (imagen decorativa) -->
     <div class="croissant-giant">
-      <img src="/img/croissant-04-01.png" alt="Croissant gigante">
+      <img src="img/croissant-04-01.png" alt="Croissant gigante">
     </div>
 
-    <!-- Diseño con palabra productos -->
-    <div class="productos-bg">
+    <!-- Texto grande "Productos" repetido como fondo -->
+    <div class="productos-bg" aria-hidden="true">
       <p>Productos</p>
       <p>Productos</p>
       <p>Productos</p>
       <p>Productos</p>
     </div>
 
-    <!-- Carrusel  -->
+    <!-- Lista de productos -->
     <div class="productos-list">
       <div class="producto">
-        <img src="/img/el croissant producto-01.png" alt="El croissant">
+        <img src="img/el croissant producto-01.png" alt="El croissant">
         <h3>El croissant</h3>
         <p class="precio"><span class="old">$12.000</span> $9.000</p>
         <a href="#" class="add-cart">Agregar al carrito *</a>
       </div>
 
       <div class="producto">
-        <img src="/img/Red Velvet producto-01.png" alt="Red velvet">
+        <img src="img/Red Velvet producto-01.png" alt="Red velvet">
         <h3>Red velvet</h3>
         <p class="precio"><span class="old">$15.000</span> $11.000</p>
         <a href="#" class="add-cart">Agregar al carrito *</a>
       </div>
 
       <div class="producto">
-        <img src="/img/Pan artesanal producto-01.png" alt="Pan artesanal">
+        <img src="img/Pan artesanal producto-01.png" alt="Pan artesanal">
         <h3>Pan artesanal</h3>
         <p class="precio"><span class="old">$10.000</span> $7.000</p>
         <a href="#" class="add-cart">Agregar al carrito *</a>
@@ -85,20 +84,33 @@
   <!-- SECCIÓN PROMOS -->
   <section class="promos">
     <div class="promos-wrapper">
-    
+
+      <!-- Imágenes decorativas detrás del encabezado (stickers/panes) -->
       <div class="promos-images" aria-hidden="true">
-        <img src="/img/isologo blanco-01.png" alt="logo 1">
-        <img src="/img/isologo morada-01.png" alt="logo 2">
-        <img src="/img/pan redondo-01.png" alt="pan redondo">
-        <img src="/img/isologo blanco-02.png" alt="logo 3">
-        <img src="/img/isologo morado-02.png" alt="logo 4">
+        <img src="img/isologo blanco-01.png" alt="logo 1">
+        <img src="img/isologo morada-01.png" alt="logo 2">
+        <img src="img/pan redondo-01.png" alt="pan redondo">
+        <img src="img/isologo blanco-02.png" alt="logo 3">
+        <img src="img/isologo morado-02.png" alt="logo 4">
       </div>
 
-    
+      <!-- Encabezado con rectángulo negro y título rotado -->
       <div class="promos-header">
-        <span class="promos-rect"></span>
         <h2 class="promos-title">PROMOS!!</h2>
       </div>
+
+      <!-- NUEVO: contenedor para las dos promos gráficas -->
+      <div class="promos-banners" aria-label="Promociones">
+        <div class="promo-item">
+          <!-- reemplaza el nombre de la imagen si la guardaste diferente -->
+          <img src="/img/publicidad01 (2).png" alt="Promo Compra Ahora">
+        </div>
+
+        <div class="promo-item">
+          <img src="/img/publicidad01 (1).png" alt="Promo Nuestro Pan">
+        </div>
+      </div>
+
     </div>
   </section>
 
