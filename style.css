@@ -219,7 +219,7 @@ body {
 }
 
 /* ---------------------------
-   PROMOS (encabezado + imágenes detrás)
+   PROMOS 
    --------------------------- */
 .promos {
   position: relative;
@@ -246,7 +246,7 @@ body {
   z-index: 6;
 }
 
-/* texto promos (rotado) */
+/* texto promos */
 .promos-header .promos-title {
   font-family: 'Inknut Antiqua', serif;
   font-size: 7rem;      
@@ -259,7 +259,7 @@ body {
   transform: rotate(-4deg);
 }
 
-/* rectángulo negro grande detrás del título */
+/* rectángulo detrás del título */
 .promos-header::before {
   content: "";
   position: absolute;
@@ -273,7 +273,7 @@ body {
   border-radius: 3px;
 }
 
-/* contenedor de imágenes decorativas detrás del encabezado */
+/* contenedor de imágenes detrás del encabezado */
 .promos-images {
   position: absolute;
   top: -25%;
@@ -298,16 +298,16 @@ body {
 }
 
 /* ---------------------------
-   NUEVO: BANNERS (dos promos principales)
+   BANNERS promos
    --------------------------- */
 .promos-banners {
   position: relative;
-  z-index: 8; /* por encima del rectángulo negro */
+  z-index: 8; 
   display: flex;
   justify-content: center;
   align-items: stretch;
   gap: 30px;
-  margin-top: 80px; /* ajusta según qué tanto quieras que suban */
+  margin-top: 80px;
   max-width: 1100px;
   margin-left: auto;
   margin-right: auto;
@@ -337,7 +337,7 @@ body {
   object-fit: cover;
 }
 
-/* Responsive: apilar en móvil */
+/* Responsive */
 @media (max-width: 900px) {
   .promos-header .promos-title {
     font-size: 4.2rem;
@@ -384,5 +384,126 @@ body {
     left: 6%;
     top: 32%;
     max-width: 320px;
+  }
+}
+
+/* ---------------------------
+   NOSOTROS 
+--------------------------- */
+.nosotros {
+  position: relative;
+  background: #521945; /* fondo completo */
+  padding: 160px 20px;
+  overflow: hidden;
+  color: #fff;
+}
+
+/* Header  */
+.nosotros-header {
+  position: relative;
+  text-align: center;
+  margin-bottom: 120px;
+}
+
+/* Títulos  */
+.nosotros-title {
+  font-family: 'Inknut Antiqua', serif;
+  font-size: 8rem;
+  font-weight: 700;
+  margin: 0;
+  line-height: 1;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Rectángulos debajo de cada título */
+.nosotros-title::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 115%;
+  height: 1.2em;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+
+/* Capa inferior */
+.nosotros-title.base {
+  color: #000; /* texto negro */
+  top: 0;
+  z-index: 1;
+}
+.nosotros-title.base::before {
+  background-color: #a04362; /* tono vino */
+}
+
+/* Capa superior*/
+.nosotros-title.angled {
+  color: #fff; 
+  transform: translateX(-50%) rotate(-10deg); 
+  top: -25px; 
+  z-index: 3;
+}
+.nosotros-title.angled::before {
+  background-color: #000; 
+  transform: translate(-50%, -50%) ;
+}
+
+/* Imagen del pan triángulo */
+.nosotros-pan {
+  position: relative;
+  margin-top: 60px;
+  width: 260px;
+  max-width: 70%;
+  z-index: 2; 
+  transform: translateX(-320px);
+}
+
+/* Contenido  */
+.nosotros-content {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 60px;
+  max-width: 1100px;
+  margin: 100px auto 0;
+}
+
+.nosotros-col {
+  flex: 1;
+}
+
+/* Logo lado izquierdo */
+.nosotros-logo {
+  max-width: 220px;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Texto lado derecho */
+.nosotros-subtitle {
+  font-family: 'Inknut Antiqua', serif;
+  font-size: 2rem;
+  color: #f0c7d4;
+  margin-bottom: 20px;
+}
+.nosotros-col.text-side p {
+  font-size: 1.2rem;
+  line-height: 1.7;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .nosotros-title {
+    font-size: 4.5rem;
+  }
+  .nosotros-content {
+    flex-direction: column;
+    text-align: center;
+  }
+  .nosotros-logo {
+    margin-bottom: 20px;
   }
 }
