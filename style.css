@@ -1,0 +1,303 @@
+/* Tipografías */  
+body {
+  margin: 0;
+  font-family: 'Varela Round', sans-serif;
+  color: #0d090a;
+   background: #912f56;
+}
+
+/* HERO */
+.hero {
+  position: relative;
+  background: url('/img/fondo header-01.png') no-repeat center center/cover;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.header-top {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 35px;
+}
+
+.logo {
+  width: 250px;
+}
+
+.icons {
+  display: flex;
+  gap: 25px;
+}
+
+.icon {
+  width: 48px;
+  height: auto;
+  object-fit: contain;
+}
+
+/* Croissants flotantes */
+.croissants-float {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.croissant {
+  position: absolute;
+}
+
+/* Croissant pequeño */
+.croissant.small-top { 
+  width: 150px;   
+  top: 40px;
+  right: 40px;
+  z-index: 3;
+}
+
+/* Croissant mediano */
+.croissant.medium { 
+  width: 230px;   
+  top: 200px; 
+  right: 50%;     
+  z-index: 3;
+}
+
+/* Croissant pequeño abajo */
+.croissant.small-bottom { 
+  width: 350px;   
+  top: auto;
+  bottom: 220px;   
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 4;      
+}
+
+/* Cesta */
+.basket {
+  position: absolute;
+  top: 20%;     
+  right: 15%;
+}
+.basket img {
+  width: 500px;  
+}
+
+/* Texto hero */
+.hero-text {
+  position: absolute;
+  left: 8%;
+  top: 38%;
+  max-width: 400px;
+  color: white;
+}
+
+.slogan {
+  font-family: 'Varela Round', sans-serif;
+  font-size: 2rem;
+}
+
+.highlight {
+  display: inline-block;
+  font-family: 'Inknut Antiqua', serif;
+  font-size: 3rem;
+  background: #912f56;
+  padding: 6px 14px;
+  transform: rotate(-2deg);
+}
+
+/* Botón */
+.btn {
+  margin-top: 20px;
+  padding: 12px 20px;
+  background: transparent;
+  border: 2px solid #fff;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1.1rem;
+  font-family: 'Varela Round', sans-serif;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background: rgba(255,255,255,0.1);
+}
+
+/* PRODUCTOS */
+.productos {
+  position: relative;
+  background: #912f56;
+  color: #eef2ef;
+  padding: 200px 20px 100px;
+  text-align: center;
+}
+
+/* Croissant gigante */
+.croissant-giant img {
+  width: 1100px;   
+  max-width: 95vw;
+  display: block;
+  margin: -500px auto 0;
+  position: relative;
+  z-index: 2;
+}
+
+/* Texto productos diseño */
+.productos-bg {
+  position: absolute;
+  top: 60px;
+  left: 0;
+  width: 100%;
+  font-family: 'Inknut Antiqua', serif;
+  font-size: 14rem;
+  font-weight: 400; 
+  color: rgba(255,255,255,0.2);
+  text-align: center;
+  line-height: 1.1;
+  z-index: 1;
+}
+.productos-bg p {
+  margin: 0;
+}
+
+/* Lista de productos */
+.productos-list {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 120px;
+  position: relative;
+  z-index: 3;
+}
+
+.producto {
+  width: 250px;
+  background: #521945;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.producto img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.precio {
+  font-size: 1rem;
+  margin: 8px 0;
+}
+.precio .old {
+  text-decoration: line-through;
+  margin-right: 8px;
+  color: #ccc;
+}
+
+.add-cart {
+  text-decoration: underline;
+  color: #eef2ef;
+  cursor: pointer;
+}
+
+/* -------------------------
+   PROMOS 
+   ------------------------- */
+.promos {
+  position: relative;
+  background: #912f56; 
+  padding: 100px 20px;
+  text-align: center;
+  color: #fff;
+  overflow: visible;
+  margin-top: 100px;
+}
+
+/* contenedor del encabezado */
+.promos-header {
+  position: relative;
+  display: inline-block;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  z-index: 3;
+}
+
+/* texto promos */
+.promos-header h2 {
+  font-family: 'Inknut Antiqua', serif;
+  font-size: 7rem;      
+  font-weight: 700;     
+  color: #912f56;       
+  margin: -40px 0 0;    
+  position: relative;
+  z-index: 4;
+  line-height: 0.95;
+  transform: rotate(-4deg);
+}
+
+/* rectángulo negro */
+.promos-header::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-4deg);
+  background: #0d090a; /* ← CAMBIO */
+  width: 300%;
+  height: 400%;
+  z-index: 3;
+  border-radius: 3px;
+}
+
+/* contenedor imágenes detrás */
+.promos-images {
+  position: absolute;
+  top: -50%; /* ← más arriba para sobresalir */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%; /* ← más juntas */
+  max-width: 1100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 5px; /* ← menos separación */
+  z-index: 2; /* quedan detrás del rectángulo */
+  pointer-events: none;
+}
+
+.promos-images img {
+  width: calc((100% / 5) - 5px); /* ← más grandes */
+  max-width: 260px;
+  height: auto;
+  object-fit: contain;
+  opacity: 0.95;
+}
+
+@media (max-width: 900px) {
+  .promos-header h2 {
+    font-size: 4.2rem;
+  }
+  .promos-images {
+    top: 32%;
+    width: 90%;
+    gap: 6px;
+  }
+  .promos-images img {
+    width: 30%;
+    max-width: 150px;
+  }
+}
+
+@media (max-width: 480px) {
+  .promos-header h2 {
+    font-size: 3rem;
+  }
+  .promos-images {
+    top: 38%;
+    gap: 6px;
+    flex-wrap: wrap;
+  }
+  .promos-images img {
+    width: 5%;
+    max-width: 120px;
+    margin-bottom: 8px;
+  }
+}
