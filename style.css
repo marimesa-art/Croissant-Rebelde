@@ -66,7 +66,7 @@ body {
 /* Croissant mediano */
 .croissant.medium { 
   width: 230px;   
-  top: 130px; 
+  top: 10px; 
   right: 50%;     
   z-index: 3;
   transform: translateX(50%);
@@ -76,7 +76,7 @@ body {
 .croissant.small-bottom { 
   width: 350px;   
   top: auto;
-  bottom: 220px;   
+  bottom: -10px;   
   left: 50%;
   transform: translateX(-50%);
   z-index: 4;      
@@ -90,7 +90,7 @@ body {
   z-index: 3;
 }
 .basket img {
-  width: 500px;  
+  width: 300px;  
   height: auto;
 }
 
@@ -155,7 +155,7 @@ body {
   width: 1100px;   
   max-width: 95vw;
   display: block;
-  margin: -500px auto 0;
+  margin: -400px auto 0;
   position: relative;
   z-index: 2;
 }
